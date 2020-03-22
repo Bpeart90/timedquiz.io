@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous" />
+        <title>JS Time Quiz</title>
+
+    </head>
+
+    <body>
+        <header class="h2" style="background-color: aliceblue;">
+            <strong><a href="highscore.html">High Scores</a> </strong>
+        </header>
+        <p id="timer" class="float-right mr-3">Time: <span>0</span></p>
+
+        <!--Home Screen-->
+        <div class="container mt-5" id="home">
+            <div class="row justify-content-center mt-5 pt-3 pb-3">
+                <div class="col-10 col-lg-8 text-center">
+
+                    <h1>Tech Quiz</h1>
+
+                    <h6>
+                        <p>Try to answer as many questions as possiblein 150 seconds<br>
+                    </h6>
+                    <p>P.S.</p>
+                    <p> For every incorrect answer, you will lose 15 seconds!!!</p><br>
+                    <button type="button" id="startBtn" class="btn btn-info btn-lg">START QUIZ</button>
+                </div>
+            </div>
+        </div>
+        <!-- Q&A -->
+        <div class="container mt-5 d-none" id="quiz">
+            <div class="row justify-content-center mt-5 pt-3 pb-3">
+                <div class="col-10 col-lg-8" id="QA-block">
+                    <h3 id="questions" class="mb-4">QUESTION</h3>
+                    <ul id="answers" class="list-unstyled">
+                        <li class="answerChoice">A) </li>
+                        <li class="answerChoice">B) </li>
+                        <li class="answerChoice">C) </li>
+                        <li class="answerChoice">D) </li>
+                    </ul>
+                    <p class="feedback"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Finished Screen -->
+        <div class="container mt-5 d-none" id="submit-score">
+            <div class="row justify-content-center mt-5 pt-3 pb-3">
+                <div class="col-10 col-lg-8">
+                    <h2>Finished!</h2>
+                    <p id="user-score"> </p>
+                    <form class="form-group">
+                        <label for="new-score">Enter your name: </label>
+                        <input type="text" id="userName">
+                        <button type="button" class="btn btn-info btn-sm submitBtn">Join Hall Of Fame</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <script src="questions.js"></script>
+            <script src="main.js"></script>
+            <script src="score.js"></script>
+        </div>
+
+    </body>
+
+</html>
