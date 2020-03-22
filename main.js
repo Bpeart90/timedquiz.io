@@ -134,7 +134,7 @@ answerChoices.addEventListener("click", function (event) {
     } else {
         pElement.innerHTML = "WRONG.";
         setTimeout(hideFeedback, 1225);
-        secondsLeft = secondsLeft - 20;
+        secondsLeft = secondsLeft - 15;
         showFeedback();
     }
     makeQuestions();
